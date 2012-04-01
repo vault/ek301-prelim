@@ -15,13 +15,14 @@ function [ A ] = computeA( C, X, Y, Sx, Sy )
             end
         end
     end
-    A(m+1:m+3,1:j)=Sx;
-    A(m+1:m+3,j+1:2*j)=Sy;
+    A(1:j,m+1:m+3)=Sx;
+    A(j+1:2*j,m+1:m+3)=Sy;
 end
 
 function [ p ] = findother(col, row)
-    for i = 1:size(col)
-        if col(i) ~= row && col(i)
+    p = 0;
+    for i = 1:length(col)
+        if col(i) && i ~= row
             p = i;
         end
     end
