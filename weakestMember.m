@@ -5,7 +5,7 @@ function [ idx ] = weakestMember(D, T)
     p(p > 0) = 0;
 
     a = 1:length(D);
-    [~,i] = max(abs(p));
+    [~,i ] = max(abs(p));
     idx = a(i);
 end
 
