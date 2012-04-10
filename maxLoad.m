@@ -1,4 +1,5 @@
 function [ m ] = maxLoad(T, L, D, idx, weak)
+    D = D - 0.6;
     L1 = abs(L(L ~= 0));
     T1 = abs(T(idx));
     ml = D(idx);
