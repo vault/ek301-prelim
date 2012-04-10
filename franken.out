@@ -1,0 +1,32 @@
+% EK301, Section A1, Group 7, Team GNU, 4/09/12
+% Michael Abed, ID U55178419
+% Joseph Stone, ID U44434740
+% Ben Havey, ID 
+Load: 3.920 N
+Member forces in Newtons:
+m1: 2.884 (C)
+m2: 2.079 (T)
+m3: 2.369 (T)
+m4: 3.349 (C)
+m5: 2.309 (C)
+m6: 4.503 (T)
+m7: 2.254 (T)
+m8: 5.543 (C)
+m9: 2.164 (T)
+m10: 4.545 (T)
+m11: 2.401 (C)
+m12: 3.104 (C)
+m13: 2.217 (T)
+m14: 1.995 (T)
+m15: 2.769 (C)
+Reaction forces in Newtons
+r1: 0.000
+r2: 2.000
+r3: 1.920
+Cost of truss: $256
+Theoretical max load is 11.5765
+Theoretical max load/cost ratio in N/$: 0.0453
+First member to  break is member 8
+The buclking force is 14.795 N
+Worst possible buckling strength is 10.810 N
+Theoretical worst load/cost ratio: 0.0423
