@@ -1,4 +1,9 @@
-% franken
+% EK301, Section A1, Group 7, 4/09/12
+% Michael Abed, ID U55178419
+% Joseph Stone, ID U44434740
+% Ben Havey, ID 
+
+% franken truss
 
 C = [
     1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
@@ -15,7 +20,7 @@ C = [
 Sx = zeros(9,3); Sx(1,1)=1;
 Sy = zeros(9,3); Sy(1,2)=1; Sy(9,3)=1;
 
-X = [0 9 14 19 24 29 34 39 48  ];
+X = [0 9 14.5 19.5 24 28.5 35 40 49  ];
 Y = [0 8.66 0 8.66 0 8.66 0 8.66 0];
 
 L = zeros(18,1); L(9+5) = -3.92;

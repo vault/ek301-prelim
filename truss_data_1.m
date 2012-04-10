@@ -1,7 +1,9 @@
-% EK301
-% Michael Abed
-% Ben Havey
-% Joseph Stone
+% EK301, Section A1, Group 7, 4/09/12
+% Michael Abed, ID U55178419
+% Joseph Stone, ID U44434740
+% Ben Havey, ID 
+
+% sample problem truss
 
 C = [
     1 1 0 0 0 0 0 0 0 0 0 0 0

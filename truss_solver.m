@@ -13,8 +13,9 @@ D = memberDistances(C, X, Y);
 
 cost = computeTrussCost(C,D);
 weakest = weakestMember(D,forces);
-ml = maxLoad(forces,L,D,weakest);
+ml = maxLoad(forces,L,D,weakest,false);
 
+printHeader();
 for i = 1:length(Ln)
     
     fprintf('Load: %.3f N\n', abs(Ln(i)));
@@ -32,3 +33,9 @@ fprintf('Cost of truss: $%d\n', round(cost));
 fprintf('Theoretical max load is %.4f\n', ml);
 fprintf('Theoretical max load/cost ratio in N/$: %.4f\n', ml/cost);
 fprintf('First member to  break is member %d\n', weakest);
+fprintf('The buclking force is %.3f N\n' , bucklingStrength(D(weakest)));
+
+weak = maxLoad(forces,L,D,weakest,true);
+
+fprintf('Worst possible buckling strength is %.3f N\n', weak);
+fprintf('Theoretical worst load/cost ratio: %.4f\n', weak/cost);

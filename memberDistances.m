@@ -6,6 +6,7 @@ function [ D ] = memberDistances(C, X, Y)
         points = [X(memb == 1); Y(memb == 1)];
         D(i) = dist(points(:,1), points(:,2));
     end
+    D = D - 0.6;
 
 end
 
